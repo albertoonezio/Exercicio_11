@@ -16,6 +16,18 @@ namespace Exercicio_Parte2_11
             int quartoNumero = 0;
             int somaTotalPar = 0;
 
+            Console.Write("Digite o Primeiro Número: ");
+            primeiroNumero = int.Parse(Console.ReadLine());
+
+            Console.Write("Digite o Segundo Número: ");
+            segundoNumero = int.Parse(Console.ReadLine());
+
+            Console.Write("Digite o Terceiro Número: ");
+            terceiroNumero = int.Parse(Console.ReadLine());
+
+            Console.Write("Digite o Quarto Número: ");
+            quartoNumero = int.Parse(Console.ReadLine());
+
             if (primeiroNumero % 2 == 0)
             {
                 somaTotalPar += primeiroNumero;
@@ -37,6 +49,7 @@ namespace Exercicio_Parte2_11
             }
 
             Console.WriteLine("A soma dos números pares é: {0}", somaTotalPar);
+            Console.ReadKey();
         }
     }
 }
